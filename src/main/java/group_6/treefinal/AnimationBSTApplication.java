@@ -1,0 +1,25 @@
+package group_6.treefinal;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class AnimationBSTApplication extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(AnimationBSTApplication.class.getResource("AnimationBST.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 840, 480);
+        stage.setTitle("Binary Search Tree!");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.setFullScreen(false);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}
