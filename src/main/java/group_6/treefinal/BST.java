@@ -21,6 +21,9 @@ public class BST<E extends Comparable<E>> implements Tree<E> {
         }
         return storedResult;
     }
+    public void clearStoreResult(){
+        storedResult = "";
+    }
     public BST() {
     }
 
@@ -29,7 +32,8 @@ public class BST<E extends Comparable<E>> implements Tree<E> {
             insert(o);
     }
 
-    private boolean search(TreeNode<E> root, E e){
+    private boolean search(
+            TreeNode<E> root, E e){
         if(root == null)
             return false;
         else if(e.compareTo(root.element) == 0)

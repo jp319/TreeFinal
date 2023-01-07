@@ -81,6 +81,7 @@ public class TreeVisualizer extends Application {
         });
 
         inorder.setOnAction(e -> {
+            tree.clearStoreResult();
             tree.inorder();
             view.displayTree();
             view.setStatus("Inorder Traversal: " + tree.getStoredResult());
