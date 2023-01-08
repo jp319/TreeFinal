@@ -18,7 +18,7 @@
             <DropShadow />
          </effect>
       </ImageView>
-      <Button fx:id="bstButton" layoutX="364.0" layoutY="342.0" mnemonicParsing="false" onAction="#bstAction" style="-fx-background-color: #98FB98;" text="Binary Search Tree">
+      <Button fx:id="bstButton" layoutX="363.0" layoutY="351.0" mnemonicParsing="false" onAction="#bstAction" style="-fx-background-color: #98FB98;" text="Binary Search Tree">
          <effect>
             <DropShadow />
          </effect>
